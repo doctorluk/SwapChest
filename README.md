@@ -7,7 +7,9 @@ Usage
 =========
 
 Enter /swapchests into the chat.
+
 Left-Click both chests of which you want their inventory to be swapped.
+
 Enter /swapchests during the process to abort the command.
 
 Permissions
