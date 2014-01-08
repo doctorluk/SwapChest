@@ -30,15 +30,15 @@ public class SwapChests extends JavaPlugin implements Listener {
 		for (Player player : this.getServer().getOnlinePlayers()) {
 			swapchestsActive.put(player, false);
 		}
-
+		
 		// Register Events in this class
 		getServer().getPluginManager().registerEvents(this, this);
 	}
- 
+	
     @Override
     public void onDisable() {
     }
-    
+	
     @EventHandler(priority = EventPriority.MONITOR)
     public void onLogin(PlayerLoginEvent event) {
     	swapchestsActive.put(event.getPlayer(), false);
